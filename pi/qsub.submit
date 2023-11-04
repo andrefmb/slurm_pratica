@@ -1,0 +1,15 @@
+#!/bin/bash
+#PBS -q checkpt
+#PBS -l nodes=1:ppn=20
+#PBS -l walltime=12:00:00
+#PBS -A loni_loniadmin1
+#PBS -m e
+#PBS -M ychen64
+#PBS -j oe
+#PBS -N MPI_PI
+
+
+cd $PBS_O_WORKDIR
+ 
+mpirun -np 20 ./mpi_pi.out
+#End-of-file (EOF)

@@ -1,0 +1,14 @@
+#!/bin/bash 
+#PBS -l nodes=4:ppn=4       #Number of nodes and processors per node 
+#PBS -l walltime=24:00:00   #Maximum wall time 
+#PBS -N myjob               #Job name 
+#PBS -o <file name>         #File name for standard output 
+#PBS -e <file name>         #File name for standard error 
+#PBS -q checkpt             #Queue name 
+#PBS -A <allocation_if_needed>  #Allocation name 
+#PBS -m e                   #Send mail when job ends 
+#PBS -M <email address>     #Send mail to this address 
+
+<shell commands>      
+mpirun -machinefile $PBS_NODEFILE -np 16 <path_to_executable> <options> 
+<shell commands> 

@@ -1,0 +1,13 @@
+Compile hello.f90/hello.c
+Create a pbs script to submit a job
+to run the executable
+
+Compile and run the hybrid program
+using npersocket option to launch
+one mpi process per cpu with 8 openmp
+threads each.
+
+Is it possible that OMP_NUM_THREADS is 
+set differently on the mother node vs others?
+Can you create such a scenario in an interactive
+job?

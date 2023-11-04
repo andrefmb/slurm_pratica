@@ -1,0 +1,27 @@
+#!/bin/bash 
+#PBS -l nodes=2:ppn=16       
+#PBS -l walltime=00:05:00   
+#PBS -N two_nodes             
+#PBS -o two_nodes_output
+#PBS -j oe
+#    -e <file name>         
+#PBS -q workq               
+#PBS -A hpc_train_2014     
+#PBS -m b
+#PBS -m e                  
+#PBS -M fchen14@lsu.edu    
+
+cd $PBS_O_WORKDIR
+#echo "hello world!"
+#python calc_pi.py 10
+echo $PBS_NODEFILE
+echo $PBS_O_WORKDIR
+echo $PBS_NUM_NODES
+# print process id of shell
+echo $$
+(cat $PBS_NODEFILE | uniq) > nodefile
+nodefile="nodefile"
+num_nodes=$( wc -l < $nodefile )
+mpirun --hostfile $nodefile -np $num_nodes hostname
+#sleep 180
+exit 1

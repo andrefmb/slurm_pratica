@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH -p checkpt
+#SBATCH -N 1
+#SBATCH -n 48
+#SBATCH -t 2:00:00
+#SBATCH -A loni_loniadmin1
+#SBATCH -J MPI_PI
+#SBATCH -o slurm-%x-%j.out-%N
+#SBATCH -e slurm-%x-%j.err-%N 
+
+cd $SLURM_SUBMIT_DIR 
+ 
+srun ./mpi_pi.out 
+seff $SLURM_JOBID
+#End-of-file (EOF)

@@ -1,0 +1,65 @@
+--------------------------------------
+Running PBS prologue script
+--------------------------------------
+User and Job Data:
+--------------------------------------
+Job ID:    305659.mike3
+Username:  fchen14
+Group:     Admins
+Date:      23-Feb-2015 15:56
+Node:      mike373 (52270)
+--------------------------------------
+PBS has allocated the following nodes:
+
+mike373
+
+A total of 1 processors on 1 nodes allocated
+---------------------------------------------
+Check nodes and clean them of stray processes
+---------------------------------------------
+Checking node mike373 15:56:27 
+-> User lafield running job 305156.mike3:state=R:ncpus=1
+-> User lafield running job 305157.mike3:state=R:ncpus=1
+-> User lafield running job 305158.mike3:state=R:ncpus=1
+-> User e_ali_e running job 305654.mike3:state=R:ncpus=8
+-> User fchen14 running job 305659.mike3:state=R:ncpus=1 (This job)
+Done clearing all the allocated nodes
+------------------------------------------------------
+Concluding PBS prologue script - 23-Feb-2015 15:56:27
+------------------------------------------------------
+
+Computing Pi v.01
+
+Pi is approximately: 3.14159265359
+Accuracy with math.pi: -2.82715971686e-14
+------------------------------------------------------
+Running PBS epilogue script    - 23-Feb-2015 15:56:27
+------------------------------------------------------
+Checking node mike373 (MS)
+-> User lafield running job 305156.mike3:state=R:ncpus=1
+-> User lafield running job 305157.mike3:state=R:ncpus=1
+-> User lafield running job 305158.mike3:state=R:ncpus=1
+-> User e_ali_e running job 305654.mike3:state=R:ncpus=8
+-> User fchen14 running job 305659.mike3:state=R:ncpus=1 (This job)
+Checking node mike373 ok
+-> User lafield running job 305156.mike3:state=R:ncpus=1
+-> User lafield running job 305157.mike3:state=R:ncpus=1
+-> User lafield running job 305158.mike3:state=R:ncpus=1
+-> User e_ali_e running job 305654.mike3:state=R:ncpus=8
+-> User fchen14 running job 305659.mike3:state=R:ncpus=1 (This job)
+------------------------------------------------------
+Concluding PBS epilogue script - 23-Feb-2015 15:56:29
+------------------------------------------------------
+Exit Status:     0
+Job ID:          305659.mike3
+Username:        fchen14
+Group:           Admins
+Job Name:        calc_pi
+Session Id:      52269
+Resource Limits: ncpus=1,neednodes=1:ppn=1,nodes=1:ppn=1,walltime=00:01:00
+Resources Used:  cput=00:00:00,mem=0kb,vmem=0kb,walltime=00:00:02
+Queue Used:      single
+Account String:  hpc_train_2014
+Node:            mike373
+Process id:      52904
+------------------------------------------------------

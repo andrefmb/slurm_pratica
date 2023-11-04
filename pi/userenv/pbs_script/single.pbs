@@ -1,0 +1,15 @@
+#!/bin/bash 
+#PBS -l nodes=1:ppn=1       
+#PBS -l walltime=00:01:00   
+#PBS -N calc_pi             
+#PBS -o calc_pi_output          
+#PBS -j oe
+#    -e <file name>         
+#PBS -q single               
+#PBS -A hpc_train_2014     
+#PBS -m e                  
+#PBS -M fchen14@lsu.edu    
+
+cd $PBS_O_WORKDIR
+#echo "hello world!"
+python calc_pi.py 10

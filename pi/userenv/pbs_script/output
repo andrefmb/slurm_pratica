@@ -1,0 +1,112 @@
+--------------------------------------
+Running PBS prologue script
+--------------------------------------
+User and Job Data:
+--------------------------------------
+Job ID:    236940.mike3
+Username:  fchen14
+Group:     Admins
+Date:      15-Sep-2014 20:20
+Node:      mike087 (58151)
+--------------------------------------
+PBS has allocated the following nodes:
+
+mike087
+mike278
+
+A total of 32 processors on 2 nodes allocated
+---------------------------------------------
+Check nodes and clean them of stray processes
+---------------------------------------------
+Checking node mike087 20:20:06 
+Checking node mike278 20:20:07 
+Done clearing all the allocated nodes
+------------------------------------------------------
+Concluding PBS prologue script - 15-Sep-2014 20:20:07
+------------------------------------------------------
+mpi_mm has started with 32 tasks.
+Initializing arrays...
+Sending 265 rows to task 1 offset=0
+Sending 265 rows to task 2 offset=265
+Sending 265 rows to task 3 offset=530
+Sending 265 rows to task 4 offset=795
+Sending 265 rows to task 5 offset=1060
+Sending 265 rows to task 6 offset=1325
+Sending 265 rows to task 7 offset=1590
+Sending 265 rows to task 8 offset=1855
+Sending 264 rows to task 9 offset=2120
+Sending 264 rows to task 10 offset=2384
+Sending 264 rows to task 11 offset=2648
+Sending 264 rows to task 12 offset=2912
+Sending 264 rows to task 13 offset=3176
+Sending 264 rows to task 14 offset=3440
+Sending 264 rows to task 15 offset=3704
+Sending 264 rows to task 16 offset=3968
+Sending 264 rows to task 17 offset=4232
+Sending 264 rows to task 18 offset=4496
+Sending 264 rows to task 19 offset=4760
+Sending 264 rows to task 20 offset=5024
+Sending 264 rows to task 21 offset=5288
+Sending 264 rows to task 22 offset=5552
+Sending 264 rows to task 23 offset=5816
+Sending 264 rows to task 24 offset=6080
+Sending 264 rows to task 25 offset=6344
+Sending 264 rows to task 26 offset=6608
+Sending 264 rows to task 27 offset=6872
+Sending 264 rows to task 28 offset=7136
+Sending 264 rows to task 29 offset=7400
+Sending 264 rows to task 30 offset=7664
+Sending 264 rows to task 31 offset=7928
+Received results from task 1
+Received results from task 2
+Received results from task 3
+Received results from task 4
+Received results from task 5
+Received results from task 6
+Received results from task 7
+Received results from task 8
+Received results from task 9
+Received results from task 10
+Received results from task 11
+Received results from task 12
+Received results from task 13
+Received results from task 14
+Received results from task 15
+Received results from task 16
+Received results from task 17
+Received results from task 18
+Received results from task 19
+Received results from task 20
+Received results from task 21
+Received results from task 22
+Received results from task 23
+Received results from task 24
+Received results from task 25
+Received results from task 26
+Received results from task 27
+Received results from task 28
+Received results from task 29
+Received results from task 30
+Received results from task 31
+------------------------------------------------------
+Running PBS epilogue script    - 15-Sep-2014 20:20:43
+------------------------------------------------------
+Checking node mike087 (MS)
+Checking node mike278 ok
+Checking node mike087 ok
+------------------------------------------------------
+Concluding PBS epilogue script - 15-Sep-2014 20:20:46
+------------------------------------------------------
+Exit Status:     0
+Job ID:          236940.mike3
+Username:        fchen14
+Group:           Admins
+Job Name:        mpi_mm
+Session Id:      58150
+Resource Limits: ncpus=1,neednodes=2:ppn=16,nodes=2:ppn=16,walltime=00:05:00
+Resources Used:  cput=00:15:24,mem=7450140kb,vmem=28909228kb,walltime=00:00:39
+Queue Used:      admin
+Account String:  hpc_hpcadmin2
+Node:            mike087
+Process id:      58955
+------------------------------------------------------
